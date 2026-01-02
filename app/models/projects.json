@@ -1,0 +1,13 @@
+{
+    "projects": [
+        {
+        "id": 1,
+        "title": "List Game Favorit",
+        "type": "Portfolio",
+        "description": "Daftar game faovorit, dengan sistem login dan CRUD, menggunakan PHP dan MySQL.",
+        "image": "listGame.png",
+        "visit_url": "https://gamelist.gamer.gd/",
+        "code_url": "https://github.com/Roni-Kurnia/Game-list"
+        }
+    ] 
+}
