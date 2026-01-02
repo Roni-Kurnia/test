@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $data['judul'] ?></title>
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="<?= BASEURL; ?>/css/bootstrap.css" rel="stylesheet">
     <style>
       html::-webkit-scrollbar {
         display: none;

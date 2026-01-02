@@ -1,8 +1,17 @@
 Options -Multiviews
 
 RewriteEngine On
+# RewriteBase /
+
+# Pastikan file dan direktori yang ada tidak di-rewrite
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^(.*)$ index.php?url=$1 [L]
-php_value display_errors On
-php_value date.timezone Asia/Jakarta
+
+# Redirect semua request ke index.php
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+
+# PHP settings (beberapa host shared tidak mengizinkan ini di .htaccess)
+# php_value display_errors Off
+# php_value date.timezone Asia/Jakarta
+
+
